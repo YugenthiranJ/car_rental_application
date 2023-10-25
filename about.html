@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <title>
+      carrentalapplication
+    </title>
+  </head>
+
+  <body>
+    <div class="w3-top">
+      <a href="home.html" class="title"> 
+        <script src="https://kit.fontawesome.com/da8b15090c.js" crossorigin="anonymous"></script>
+        <i class="fa-solid fa-car"></i>
+          <b>VV</b> Cars Rentals
+      </a>
+      <a class="w3-bar-item w3-button w3-black w3-hide-large w3-right" style="padding:15.5px" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="topbar">
+        <a href="javascript:void(0)" ><i class="fa fa-search"></i></a>
+        <a href ="home.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href ="profile.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-address-card" aria-hidden="true"></i> My profile</a>
+        <a href ="booking.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-book" aria-hidden="true"></i> Reserve a Car</a>
+        <a href ="my booking.html" class="w3-hide-medium w3-hide-small"><i class="fa fa-bookmark" aria-hidden="true"></i> My bookings</a>
+        <a href ="about.html" class="w3-hide-medium w3-hide-small"  style="background-color: rgb(244, 67, 54);color: white;" ><i class="fa fa-volume-control-phone" aria-hidden="true"></i> About</a>
+      </div>
+    </div>
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top" style="margin-top:46px">
+        <a href="profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Profile</a>
+        <a href="booking.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Reserve a car</a>
+        <a href="my booking.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Booking</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+
+
+    <header class="w3-wide">
+      <img src="wallpaperflare.com_wallpaper (2).jpg" alt="Girl in a jacket" width="1400" height="10%" height="10px">
+      <div class="w3-display-left w3-padding w3-margin-top w3-center" style="position:absolute;top: 30%;left:10%;">
+        <h1 class="w3-xxlarge w3-text-white">
+          <span class="w3-padding w3-red ">
+            <b>VV</b>
+          </span>
+          <span class="w3-hide-small w3-black w3-text-white w3-padding">
+            Car Rentals
+          </span>
+        </h1>
+      </div>
+    </header>
+  </body>
+
+
+  <div class="w3-content w3-padding" style="max-width:1564px">
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4><b>Contact</b></h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4 w3-center" >
+        <h4><b>About</b></h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify w3-center">
+        <h4><b>Store</b></h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> VV cars</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          width="48" height="48"
+          viewBox="0 0 48 48">
+          <path fill="#1565C0" d="M45,35c0,2.209-1.791,4-4,4H7c-2.209,0-4-1.791-4-4V13c0-2.209,1.791-4,4-4h34c2.209,0,4,1.791,4,4V35z"></path><path fill="#FFF" d="M15.186 19l-2.626 7.832c0 0-.667-3.313-.733-3.729-1.495-3.411-3.701-3.221-3.701-3.221L10.726 30v-.002h3.161L18.258 19H15.186zM17.689 30L20.56 30 22.296 19 19.389 19zM38.008 19h-3.021l-4.71 11h2.852l.588-1.571h3.596L37.619 30h2.613L38.008 19zM34.513 26.328l1.563-4.157.818 4.157H34.513zM26.369 22.206c0-.606.498-1.057 1.926-1.057.928 0 1.991.674 1.991.674l.466-2.309c0 0-1.358-.515-2.691-.515-3.019 0-4.576 1.444-4.576 3.272 0 3.306 3.979 2.853 3.979 4.551 0 .291-.231.964-1.888.964-1.662 0-2.759-.609-2.759-.609l-.495 2.216c0 0 1.063.606 3.117.606 2.059 0 4.915-1.54 4.915-3.752C30.354 23.586 26.369 23.394 26.369 22.206z"></path><path fill="#FFC107" d="M12.212,24.945l-0.966-4.748c0,0-0.437-1.029-1.573-1.029c-1.136,0-4.44,0-4.44,0S10.894,20.84,12.212,24.945z"></path>
+          </svg>
+        </p>
+        <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADg0lEQVRoge1XPWzTQBT+nnEjZWjLCFXFgJja0iYtEhUj8dSEARYm2BATQgUJxFBAIBAbEiAWpC5Z2TqzdEJMlSgsjIjAUgqipbSJ/Rhin8/nu8QOqVMJv+gk+/P7+Xz+7t0FyC233HLL7R+MPkyiwKPWQwCXABxNE8xajBL5gWWcOvpqsIbHqBd/te7aPGo9AHCrG1kjEVCyoqxiZMxpxsSLjhHh9s5wAbR+xmqgw8zHk2VJOIwzcPlmQyHfM2EAHAHTEQ5x0mCmeD5iD1DHPRCWsXacHRQfgI5TxlLMiQHY3GnmMtGxCVcmlfV+MQllr2MZo5hDt1j7IOhYdkgWG34dIaFB6lhnSaUbkdCgdBzHkk+qoY2GSczk+imL3puDFQAMEmN06gSmHl0FAyi/WET5+XWUn10DA5i4fxnDE8dEEjmOmdqyCIZUjJUBOU4hGvWTMfIniBB8XYulm2CMXzyLoZFi+97dg+e1BwDYI0MYvzAfJjMQjhMJ6oSkdX7xFw5J6/zibRTA+6VX4t7z9sDsAeyCQVhbXBZ+qmWxZ7ByoV0DpadXwOxh7cYyPHcX7LlgdsEMnHxyHswtrN9ZyXaTYxWTjhLqwvPcXUF47WY9ksht7YC5Jem4Q1EtlqI5sIzpz2e20LH0YHfjO+yRAgBg8nHV/wItfFx6A7e5heaP37GE/ZRFJ8KqWayQZwCfX7/Dn41NMAhucxtucwtucwsMYHdjE19XPqVYeGT28xe/aATSIoeS37To6e18QXo2GB0nrxPWE13oIOi4O2Y+7vftKJEFYZ2vdh8IkiQqyirW/evE8d6layclLPB90HHyWIUj+2uga+A+67gzJvHTOOvXQMY6jmLSLGscVcjS9eNp5xymKzUwCDNODdOVKhgQ14GVnBpm/Gdlp4ZSpQoGoeTUUKosCL+yU0W5suD7VTHrX886VZT9GIAwFzxjYK6ygDmn7XfKCa+Dlwj2C/8vpfpPidH+ARy8mXQtEol7ivjJ8fF84UyzrwsOw0R+luY7qKLb/Wn1dNEkr8x0rI9PJt0u+0A2Og6xZC1YNts4U4mLRgvrW60pNj1h1WyAGgyMmcnpsP4QNvmmsC8WM9eDRPKIY9LpkqOdS/UNycmny84nzJ6MuH6oeri1WhyyC0R0HMBwdJZ90pxmLyBp9IGkzhgNIn75c3v73n6kzy233HL7j+wvUdiMkgjPahcAAAAASUVORK5CYII="></p>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="48" height="48"
+        viewBox="0 0 48 48">
+        <path fill="#4527a0" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path fill="#fff" d="M32.267,20.171c0-0.681-0.584-1.264-1.264-1.264h-2.334l-5.35-6.25	c-0.486-0.584-1.264-0.778-2.043-0.584l-1.848,0.584c-0.292,0.097-0.389,0.486-0.195,0.681l5.836,5.666h-8.851	c-0.292,0-0.486,0.195-0.486,0.486v0.973c0,0.681,0.584,1.506,1.264,1.506h1.972v4.305c0,3.502,1.611,5.544,4.723,5.544	c0.973,0,1.378-0.097,2.35-0.486v3.112c0,0.875,0.681,1.556,1.556,1.556h0.786c0.292,0,0.584-0.292,0.584-0.584V21.969h2.812	c0.292,0,0.486-0.195,0.486-0.486V20.171z M26.043,28.413c-0.584,0.292-1.362,0.389-1.945,0.389c-1.556,0-2.097-0.778-2.097-2.529	v-4.305h4.043V28.413z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="48" height="48"
+        viewBox="0 0 48 48">
+        <path fill="#cfd8dc" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path fill="#536dfe" d="M37,6H26.463L13.154,42H37c2.762,0,5-2.238,5-5V11C42,8.238,39.762,6,37,6z"></path><path fill="#fafafa" d="M24.34,23.869v3.365h-1.067v-8.31h2.831c0.683-0.014,1.343,0.245,1.833,0.719 c0.496,0.447,0.776,1.086,0.766,1.754c0.014,0.671-0.265,1.316-0.766,1.764c-0.495,0.472-1.106,0.708-1.833,0.707L24.34,23.869 L24.34,23.869z M24.34,19.947v2.901h1.79c0.397,0.012,0.78-0.144,1.056-0.43c0.561-0.545,0.573-1.442,0.028-2.003 c-0.009-0.01-0.019-0.019-0.028-0.028c-0.273-0.292-0.657-0.452-1.056-0.441L24.34,19.947L24.34,19.947z"></path><path fill="#fafafa" d="M31.163,21.362c0.789,0,1.412,0.211,1.868,0.633s0.685,1,0.684,1.734v3.504h-1.021v-0.789h-0.046 c-0.442,0.65-1.03,0.975-1.764,0.975c-0.626,0-1.15-0.186-1.572-0.557c-0.41-0.345-0.642-0.857-0.633-1.392 c0-0.588,0.222-1.056,0.667-1.404c0.445-0.347,1.038-0.522,1.781-0.522c0.634,0,1.156,0.116,1.566,0.348v-0.244 c0.002-0.365-0.159-0.712-0.441-0.945c-0.282-0.255-0.65-0.394-1.03-0.389c-0.596,0-1.068,0.252-1.416,0.755l-0.94-0.592 C29.384,21.734,30.149,21.362,31.163,21.362z M29.782,25.493c-0.001,0.276,0.13,0.535,0.354,0.696 c0.236,0.186,0.529,0.284,0.829,0.278c0.45-0.001,0.882-0.18,1.201-0.499c0.354-0.333,0.53-0.723,0.53-1.172 c-0.333-0.265-0.797-0.398-1.392-0.398c-0.434,0-0.795,0.105-1.085,0.314C29.927,24.925,29.782,25.183,29.782,25.493L29.782,25.493 z"></path><path fill="#fafafa" d="M39.576,21.548l-3.564,8.192H34.91l1.323-2.866l-2.344-5.325h1.16l1.694,4.084h0.023l1.648-4.084 H39.576z"></path><path fill="#4285f4" d="M17.263,23.143c0-0.325-0.027-0.65-0.082-0.971h-4.502v1.839h2.578 c-0.107,0.593-0.451,1.117-0.953,1.451v1.193h1.539C16.744,25.824,17.263,24.596,17.263,23.143z"></path><path fill="#34a853" d="M12.679,27.808c1.288,0,2.373-0.423,3.164-1.152l-1.539-1.193c-0.428,0.29-0.98,0.456-1.625,0.456 c-1.245,0-2.302-0.839-2.68-1.97H8.414v1.23C9.224,26.79,10.875,27.808,12.679,27.808z"></path><path fill="#fbbc04" d="M9.999,23.948c-0.2-0.593-0.2-1.235,0-1.827v-1.23H8.414c-0.678,1.349-0.678,2.938,0,4.287 L9.999,23.948z"></path><path fill="#ea4335" d="M12.679,20.15c0.681-0.011,1.339,0.246,1.831,0.716l0,0l1.362-1.362 c-0.864-0.811-2.009-1.257-3.194-1.243c-1.805,0-3.455,1.018-4.265,2.63l1.585,1.23C10.377,20.99,11.434,20.15,12.679,20.15z"></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="48" height="48"
+        viewBox="0 0 48 48">
+        <path fill="#0d47a1" d="M5.446 18.01H.548c-.277 0-.502.167-.503.502L0 30.519c-.001.3.196.45.465.45.735 0 1.335 0 2.07 0C2.79 30.969 3 30.844 3 30.594 3 29.483 3 28.111 3 27l2.126.009c1.399-.092 2.335-.742 2.725-2.052.117-.393.14-.733.14-1.137l.11-2.862C7.999 18.946 6.949 18.181 5.446 18.01zM4.995 23.465C4.995 23.759 4.754 24 4.461 24H3v-3h1.461c.293 0 .534.24.534.535V23.465zM13.938 18h-3.423c-.26 0-.483.08-.483.351 0 .706 0 1.495 0 2.201C10.06 20.846 10.263 21 10.552 21h2.855c.594 0 .532.972 0 1H11.84C10.101 22 9 23.562 9 25.137c0 .42.005 1.406 0 1.863-.008.651-.014 1.311.112 1.899C9.336 29.939 10.235 31 11.597 31h4.228c.541 0 1.173-.474 1.173-1.101v-8.274C17.026 19.443 15.942 18.117 13.938 18zM14 27.55c0 .248-.202.45-.448.45h-1.105C12.201 28 12 27.798 12 27.55v-2.101C12 25.202 12.201 25 12.447 25h1.105C13.798 25 14 25.202 14 25.449V27.55zM18 18.594v5.608c.124 1.6 1.608 2.798 3.171 2.798h1.414c.597 0 .561.969 0 .969H19.49c-.339 0-.462.177-.462.476v2.152c0 .226.183.396.422.396h2.959c2.416 0 3.592-1.159 3.591-3.757v-8.84c0-.276-.175-.383-.342-.383h-2.302c-.224 0-.355.243-.355.422v5.218c0 .199-.111.316-.29.316H21.41c-.264 0-.409-.143-.409-.396v-5.058C21 18.218 20.88 18 20.552 18c-.778 0-1.442 0-2.22 0C18.067 18 18 18.263 18 18.594L18 18.594z"></path><path fill="#00adee" d="M27.038 20.569v-2.138c0-.237.194-.431.43-.431H28c1.368-.285 1.851-.62 2.688-1.522.514-.557.966-.704 1.298-.113L32 18h1.569C33.807 18 34 18.194 34 18.431v2.138C34 20.805 33.806 21 33.569 21H32v9.569C32 30.807 31.806 31 31.57 31h-2.14C29.193 31 29 30.807 29 30.569V21h-1.531C27.234 21 27.038 20.806 27.038 20.569L27.038 20.569zM42.991 30.465c0 .294-.244.535-.539.535h-1.91c-.297 0-.54-.241-.54-.535v-6.623-1.871c0-1.284-2.002-1.284-2.002 0v8.494C38 30.759 37.758 31 37.461 31H35.54C35.243 31 35 30.759 35 30.465V18.537C35 18.241 35.243 18 35.54 18h1.976c.297 0 .539.241.539.537v.292c1.32-1.266 3.302-.973 4.416.228 2.097-2.405 5.69-.262 5.523 2.375 0 2.916-.026 6.093-.026 9.033 0 .294-.244.535-.538.535h-1.891C45.242 31 45 30.759 45 30.465c0-2.786 0-5.701 0-8.44 0-1.307-2-1.37-2 0v8.44H42.991z"></path>
+      </svg>
+      
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>POWERED BY</h3>
+      <p>WE 3</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Follow us on</h3>
+      <div class="w3-section">
+        <a href =""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+    </div>
+  
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mustang</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Audi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Charger</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Jeep</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Rolls Royce</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Polero</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bugatti</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Toyota</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ferrari</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bently</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Renault</span>
+      </p>
+    </div>
+  </footer>
+  </div>
+</html>

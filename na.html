@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="na style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/da8b15090c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title> carrentalapplication </title>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="carrental.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <a href="index.html">
+      <button type="submit" class="pure-button pure-button-primary" style="position: relative;left: 5%;">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </a><h1 class="w3-center" style="color: white;"><b>Sign Up</b></h1>
+    <div class="">
+      <form action="home.html" id="account">
+        <div class="row">
+          <div class="col">
+            <i class="fa-solid fa-user" style="color: white;" >  First Name</i><br>
+            <input type="text" class="btn" placeholder="Firstname" id="fname" name="firstname" width="75" height="75" required><br><br>
+            <i class="fa-solid fa-user" style="color: white;">  Last Name</i><br>
+            <input type="text" class="btn" placeholder="Lastname" id="lname" name="lastname" width="75" height="75" required ><br><br>
+            <i class="fa-solid fa-envelope" style="color: white;"> E - mail</i><br>
+            <input type="email" class="btn" placeholder="Email" id="email" name="email" width="75" height="75" required><br><br>
+            <i class="fa-solid fa-phone" style="color: white;"> Phone</i><br>
+            <input type="tel" class="btn" id="phone" name="phone" placeholder="012-345-6789" required><br><br>
+            <i class="fa-solid fa-genderless" style="color: white;"> Gender</i><br>
+            <select id="gender" name="gender" class="btn" placeholder="Gender" required>
+              <option value=""> <p>Gender</p></option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              <option value="o">Others</option>
+            </select required> <br><br>
+            <i class="fa-solid fa-lock" style="color: white;">  Password</i><br>
+            <input type="password" placeholder="Password" value="" maxlength="8" id="password" name="passward" required><br><br>
+            <i class="fa-solid fa-lock" style="color: white;">  Confirm Password</i><br>
+            <input type="password" placeholder="Confirm Password " value="" maxlength="8" id="confirm_password" required><br>
+            <script>
+              var password = document.getElementById("password"), confirm_password = document.getElementById("confirm_password");
+              function validatePassword(){
+               if(password.value != confirm_password.value) {
+                 confirm_password.setCustomValidity("Passwords Don't Match");
+                } else {
+                 confirm_password.setCustomValidity('');
+                }
+              } 
+              password.onchange = validatePassword;
+              confirm_password.onkeyup = validatePassword;
+            </script><br>
+              <input type="checkbox" onclick="myFunction()" style="height: 15px;width: 15px;color: white;">
+              <b style="color: white;">Show Password</b>
+              <script>
+                function myFunction() {
+                  var x = document.getElementById("password");
+                  if (x.type === "password") {
+                    x.type = "text";
+                  } else {
+                    x.type = "password";
+                  }
+                }
+              </script><br><br>
+              <input type="submit" name="signup" class="pure-button pure-button-primary" value="Sign up">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./na.js"></script>
+</body>
+</html>

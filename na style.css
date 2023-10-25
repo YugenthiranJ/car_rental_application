@@ -1,0 +1,88 @@
+body 
+{
+  margin:0;
+  padding:0;
+  background-size:cover;
+  background-position:center;
+  
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  padding: 5px 0 30px 0;
+  
+} 
+
+#myVideo {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+input[type=submit] {
+  background-color: rgb(245, 66, 54);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(245, 66, 54);
+}
+
+
+.col {
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+}

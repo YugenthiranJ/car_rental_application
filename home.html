@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="home style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>carrentalapplication</title>
+</head>
+<body>
+  <div class="w3-top">
+    <a href="home.html" class="title"> 
+      <script src="https://kit.fontawesome.com/da8b15090c.js" crossorigin="anonymous"></script>
+      <i class="fa-solid fa-car"></i>
+        <b>VV</b> Cars Rentals
+    </a>
+    <a class="w3-bar-item w3-button w3-black w3-hide-large w3-right" style="padding:15.5px" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <div class="topbar">
+      <a href="javascript:void(0)" ><i class="fa fa-search"></i></a>
+      <a href ="home.html" class="w3-hide-medium w3-hide-small" style="background-color: rgb(244, 67, 54);color: white;"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      <a href ="profile.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-address-card" aria-hidden="true"></i> My profile</a>
+      <a href ="booking.html" class="w3-hide-medium w3-hide-small"><i class="fa fa-book" aria-hidden="true"></i> Reserve a Car</a>
+      <a href ="my booking.html" class="w3-hide-medium w3-hide-small"><i class="fa fa-bookmark" aria-hidden="true"></i> My bookings</a>
+      <a href ="about.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-volume-control-phone" aria-hidden="true"></i> About</a>
+    </div>
+  </div>
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top" style="margin-top:46px">
+      <a href="profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Profile</a>
+      <a href="booking.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Reserve a car</a>
+      <a href="my booking.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Booking</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+   
+
+<header class="w3-wide"class="d" style="max-width:1400px;" id="home">
+  <img class="w3-image" src="wallpaperflare.com_wallpaper.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-left w3-padding w3-margin-top w3-center" style="position:absolute;top: 30%;
+  left:10%;">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-red "><b>VV</b></span><span class="w3-hide-small w3-black w3-text-white w3-padding">Car Rentals</span></h1>
+  </div>
+</header>
+
+</body>
+
+
+<footer class="w3-row-padding w3-padding-32">
+  <div class="w3-third">
+    <h3>POWERED BY</h3>
+    <p>WE 3</p>
+  </div>
+
+  <div class="w3-third">
+    <h3>Follow us on</h3>
+    <div class="w3-section">
+      <a href =""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+  </div>
+
+  <div class="w3-third w3-serif">
+    <h3>POPULAR TAGS</h3>
+    <p>
+      <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mustang</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Audi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Charger</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Jeep</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Rolls Royce</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Polero</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bugatti</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Toyota</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ferrari</span>
+      <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bently</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Renault</span>
+    </p>
+  </div>
+</footer>
+</div>
+
+<script>
+function w3_open() {
+document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+</html>

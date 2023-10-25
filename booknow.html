@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="booknow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>
+      carrentalapplication
+    </title>
+  </head>
+
+  <body>
+    <div class="w3-top">
+      <a href="home.html" class="title"> 
+        <script src="https://kit.fontawesome.com/da8b15090c.js" crossorigin="anonymous"></script>
+        <i class="fa-solid fa-car"></i>
+          <b>VV</b> Cars Rentals
+      </a>
+      <a class="w3-bar-item w3-button w3-black w3-hide-large w3-right" style="padding:15.5px" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="topbar">
+        <a href="javascript:void(0)" ><i class="fa fa-search"></i></a>
+        <a href ="home.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href ="profile.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-address-card" aria-hidden="true"></i> My profile</a>
+        <a href ="booking.html" class="w3-hide-medium w3-hide-small" style="background-color: rgb(244, 67, 54);color: white;"><i class="fa fa-book" aria-hidden="true"></i> Reserve a Car</a>
+        <a href ="my booking.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-bookmark" aria-hidden="true"></i> My bookings</a>
+        <a href ="about.html" class="w3-hide-medium w3-hide-small" ><i class="fa fa-volume-control-phone" aria-hidden="true"></i> About</a>
+      </div>
+    
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-top" style="margin-top:46px">
+        <a href="profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Profile</a>
+        <a href="booking.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Reserve a car</a>
+        <a href="my booking.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">My Booking</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+    </div>
+    <header class="w3-wide">
+      <img src="wallpaperflare.com_wallpaper (2).jpg" alt="Girl in a jacket" width="1400" height="10%">
+      <div class="w3-display-left w3-padding w3-margin-top w3-center" style="position:absolute;top: 30%;left:10%;">
+        <h1 class="w3-xxlarge w3-text-white">
+          <span class="w3-padding w3-red ">
+            <b>VV</b>
+          </span>
+          <span class="w3-hide-small w3-black w3-text-white w3-padding">
+            Car Rentals
+          </span>
+        </h1>
+      </div>
+    </header><br>
+
+<form action="payment.html">
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+          
+            
+              <div class="row">
+                <div class="col-50">
+                    <div class="w3-half" style="padding-right: 5%;">
+                  <h3>Billing Address</h3>
+
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="">
+                    </div>
+                  </div>
+                </div> 
+                <div class="w3-half  " style="padding-top:4.55%;padding-left: 5%;">
+                    
+                    <div class="row">
+                        <div class="col-50">
+                          <label for="state">Pickup Date</label>
+                          <input type="date" >
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">PickUp Time</label>
+                          <input type="time" >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">Drop-off Date</label>
+                          <input type="date" >
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Drop-off Time</label>
+                          <input type="time" >
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-50">
+                            <label for="zip">No of passengers</label>
+                            <select >
+                                <option value="">No of passengers</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                              </select>
+                        </div>
+                        <div class="col-50">
+                            <label for="zip">Driver</label>
+                            <select >
+                                <option value="">Driver</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                              </select>
+                        </div>
+                      </div>
+                      <br>
+                      <label for="fname"><i class="fa fa-volume-control-phone"></i> Mobile number</label>
+                  <input type="text" id="fname" name="firstname" placeholder="">
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button class="w3-button w3-black w3-padding-large"  onclick="document.getElementById('download').style.display='block'"> <i class="fa-solid fa-cart-shopping"></i> Book</button>
+
+</form>
+  </body>
+
+
+
+
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>POWERED BY</h3>
+      <p>WE 3</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Follow us on</h3>
+      <div class="w3-section">
+        <a href =""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+    </div>
+  
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mustang</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Audi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Charger</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Jeep</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Rolls Royce</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Polero</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bugatti</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Toyota</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ferrari</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bently</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Renault</span>
+      </p>
+    </div>
+  </footer>
+</html>

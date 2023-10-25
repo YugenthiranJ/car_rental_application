@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.fa-solid{
+  color: #000000;
+}
+.topbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+  
+.topbar a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.topbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.topbar a.active {
+    background-color: rgb(245, 66, 54);
+    color: white;
+  }
+.topbar a.active:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.title{
+     background-color: rgb(244, 67, 54);
+     color: rgb(0, 0, 0);
+     float: left;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+}
+.title b{
+  color: #ffffff;
+}
+.head{
+  color: white;
+  font-size: xx-large;
+}
+.hs{
+  padding :2px;
+  color:black ;
+  opacity: 0.5; ;
+}
+.big{
+  display: middle;
+  margin-top: 10%;
+  position: center;
+}
+.d
+{
+  display: ruby-base-container;
+  content: normal;
+  width: 1400px;
+}
