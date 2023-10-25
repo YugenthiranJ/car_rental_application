@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="login style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>carrentalapplication</title>
+ </head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="carrental.mp4" type="video/mp4">
+  </video>
+  <div class="">
+    <div class="container">
+        <form action="home.html">
+          <div class="row">
+            <h2 style="text-align:center;color: white;"><b>Log In</b></h2>
+            <div class="col">
+              <div class="w3-padding">
+                <a href="#" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                </a>
+                <a href="#" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                </a>
+                <a href="" id="login" class="google btn">
+                  <i class="fa fa-google fa-fw">
+                  </i> Login with Google+
+                </a>
+              </div>
+            </div>
+            <div class="col">   
+                <p class="w3-center" style="color: white;"><u><b>Or sign in manually<b></u></p>
+                <div class="w3-padding">
+                <input type="text" name="email" class="floatLabel" placeholder="Username or E-mail" required>
+                <br><br>
+                <input type="password" name="password" class="floatLabel" placeholder="Password" required>
+                <br><br>
+                <input type="submit" value="Login">
+                <br><p style="text-align: center;color: white;"><b>or</b></p>
+                <div class="">
+                  <div class="">
+                    <a href="na.html" style="color:rgb(255, 255, 255);background-color: black; text-align: center;" class="btn">Sign up</a>
+                  </div>
+                    <a href="#" style="color:rgb(255, 255, 255);background-color: black;text-align: center;" class="btn">Forgot password?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+        </form>
+  </div>
+</body>
+
+ <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB1jB7NSK1Y4RrCaHLlblq7Wme1HZ2sA6w",
+        authDomain: "carrental-56c93.firebaseapp.com",
+        databaseURL: "https://carrental-56c93-default-rtdb.firebaseio.com",
+        projectId: "carrental-56c93",
+        storageBucket: "carrental-56c93.appspot.com",
+        messagingSenderId: "363429444703",
+        appId: "1:363429444703:web:a3a8db460451a19466afea"
+      };
+      firebase.initializeApp(firebaseConfig);
+      document.getElementById('login').addEventListener('click', GoogleLogin)
+
+      let provider = new firebase.auth.GoogleAuthProvider()
+
+      function GoogleLogin(){
+        console.log('Login Btn Call')
+        firebase.auth().signInWithPopup(provider).then(res=>{
+          console.log(res.user)
+          document.getElementById('LoginScreen').style.display="none"
+          document.getElementById('dashboard').style.display="block"
+          showUserDetails(res.user)
+        }).catch(e=>{
+          console.log(e)
+        })
+      }
+
+      function checkAuthState(){
+        firebase.auth().onAuthStateChanged(user=>{
+          if(user){
+            document.getElementById('LoginScreen').style.display="none"
+            document.getElementById('dashboard').style.display="block"
+            showUserDetails(user)
+          }else{
+
+          }
+        })
+      }
+      checkAuthState()
+    </script>
+</html>
